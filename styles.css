@@ -3,8 +3,8 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: #333333;
-    background-color: #f9f9f9;
+    color: #F9F9F9;
+    background-color: #111111;
 }
 
 .container {
@@ -15,8 +15,7 @@ body {
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: #1a1d21;
     text-align: center;
     padding: 20px 0;
     position: relative;
@@ -24,22 +23,22 @@ header {
 
 header h1 {
     font-size: 3.5em;
+    color: #13bae8;
     margin: 0;
 }
 
 header h1 a {
-    color: #fff;
+    color: #13bae8;
     text-decoration: none;
     padding: 10px 15px;
     transition: background 0.3s ease, color 0.3s ease;
 }
 
 header h1 a:hover {
-    background: #555;
+    background: #007696;
     border-radius: 5px;
-    color: #f9f9f9;
+    color: #F9F9F9;
 }
-
 
 nav ul {
     list-style: none;
@@ -55,7 +54,7 @@ nav li {
 }
 
 nav a {
-    color: #fff;
+    color: #F9F9F9;
     text-decoration: none;
     font-size: 2em;
     padding: 10px 15px;
@@ -63,48 +62,63 @@ nav a {
 }
 
 nav li:nth-child(2n) {
-    color: #fff; /* Barva oddělovače */
+    color: #F9F9F9; /* Barva oddělovače */
     font-size: 2em;
     display: flex;
     align-items: center;
 }
 
 nav a:hover {
-    background: #555;
+    background: #007696;
     border-radius: 5px;
-    color: #f9f9f9;
+    color: #F9F9F9;
 }
-
 
 section {
     padding: 20px 0;
     position: relative;
+    /* background: #213142; /* Sekundární tmavé pozadí */
 }
 
 section h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 2.5em;
+    color: #13bae8;
 }
 
 #about .content {
     display: flex;
     gap: 20px;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+#about .image:hover {
+    background: #007696;
+    color: #F9F9F9;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+#about .image {
+    flex: 1 1 calc(45% - 20px);
+    max-width: calc(45% - 20px);
+    background: #1a1d21;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease;
 }
 
 #about img {
-    max-width: 45%;
-    width: 100%;
+    max-width: 100%;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transition: transform 0.5s ease;
 }
 
 #about img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.01);
 }
 
 #skills ul {
@@ -117,20 +131,21 @@ section h2 {
     display: inline-block;
     margin: 10px 15px;
     padding: 10px 20px;
-    background: #fff;
+    background: #1a1d21;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #13bae8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 #skills li a {
-    color: #333;
+    color: #13bae8;
     text-decoration: none;
 }
 
 #skills li:hover {
     transform: translateY(-5px);
-    background: #eee;
+    background: #007696;
 }
 
 .projects {
@@ -143,10 +158,10 @@ section h2 {
 .project {
     flex: 1 1 calc(45% - 20px);
     max-width: calc(45% - 20px);
-    background: #ffffff;
+    background: #1a1d21;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -160,8 +175,17 @@ section h2 {
 
 .project:hover {
     transform: translateY(-5px);
-    background: #eee;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    background: #007696;
+    color: #F9F9F9;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.project h3 {
+    color: #13bae8;
+}
+
+.project:hover h3 {
+    color: #F9F9F9;
 }
 
 .project img:hover {
@@ -169,8 +193,8 @@ section h2 {
 }
 
 footer {
-    background: #333;
-    color: #fff;
+    background: #1a1d21;
+    color: #F9F9F9;
     text-align: center;
     padding: 20px 0;
 }
@@ -196,4 +220,3 @@ footer {
         max-width: 100%;
     }
 }
-

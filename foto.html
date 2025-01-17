@@ -4,29 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <title>Foto</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1><a href="index.html">Erik Weglarz</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="foto.html">Foto</a></li>
-                    <li>|</li>
-                    <li><a href="video.html">Video</a></li>
-                    <li>|</li>
-                    <li><a href="zvuk.html">Zvuk</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 400,
+            once: false,
+            offset: 20 
+        });
+    </script>
+
+<header>
+    <div class="container">
+        <h1><a href="index.html">Erik Weglarz</a></h1>
+        <nav>
+            <ul>
+                <li><a href="foto.html">Foto</a></li>
+                <li>|</li>
+                <li><a href="video.html">Video</a></li>
+                <li>|</li>
+                <li><a href="zvuk.html">Zvuk</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
     <section>
         <div class="container">
             <h2>Galerie Foto</h2>
             <p>Obsah stránky o fotografii.</p>
         </div>
     </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2 data-aos="fade-up">Alba</h2>
+            <div class="projects">
+                <div class="project" data-aos="fade-up">
+                    <img src="images/galery/MCR Enduro Brno 10. 11. 2024-5780.webp" alt="Enduro 1">
+                    <h3>MČR Enduro Sprint</h3>
+                    <p>Automotodrom Brno</p>
+                </div>
+                <div class="project" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/galery/eForce 14. 10. 2024-5454.webp" alt="eForce 1">
+                    <h3>eForce Prague Formula</h3>
+                    <p>ČVUT</p>
+                </div>
+                <div class="project" data-aos="fade-up">
+                    <img src="images/galery/Silny Kafe 18. 8. 2024-1213338.webp" alt="Silny Kafe 1">
+                    <h3>Silný Kafe</h3>
+                    <p>Modrá Vopice</p>
+                </div>
+                <div class="project" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/galery/Syncopation 18. 8. 2024-1212970.webp" alt="Syncopation 1">
+                    <h3>Syncopation</h3>
+                    <p>Modrá Vopice</p>
+                </div>
+                <div class="project" data-aos="fade-up">
+                    <img src="images/galery/Koby Fray 18. 8. 2024-1212404.webp" alt="Koby Fray 1">
+                    <h3>Koby Fray</h3>
+                    <p>Modrá Vopice</p>
+                </div>
+                <div class="project" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/galery/Rock cafe v1-1200598.webp" alt="eForce 1">
+                    <h3>Gymfest</h3>
+                    <p>Rock Cafe</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
             <p>&copy; 2025 Erik Weglarz. Všechna práva vyhrazena.</p>
